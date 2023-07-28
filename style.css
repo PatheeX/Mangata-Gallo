@@ -31,7 +31,7 @@ body::-webkit-scrollbar-thumb
 
 header {
   background-color: transparent;
-  padding: 50px;
+  padding: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,6 +41,9 @@ header img {
   width: 45%;
   min-width: 300px;
   text-align: center;
+  border: 2px solid goldenrod;
+  padding: 10px;
+  box-shadow: 2px 2px 8px goldenrod;
 }
 
 nav {
@@ -107,7 +110,7 @@ main div {
   box-shadow: 5px 5px 10px goldenrod;
   display: flex;
   justify-content: left;
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 .promo {
@@ -131,22 +134,71 @@ main div {
 }
 
 section {
-  display:flex;
-  background-color: brown;
+  display: flex;
   justify-content:space-evenly;
+  color: #ebe7e8f1;
 }
 
 section div {
+  display: inline-block;
   width: 33vw;
-  height: 500px;
-  background-color: aqua;
+  max-width: 500px;
+  height: auto;
   margin: 10px;
+  border: 2px solid goldenrod;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px goldenrod;
 }
 
+section div img {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
+section h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  letter-spacing: 1.2px;
+}
 
+.left p, .right p {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
 
+.mid p {
+  letter-spacing: 1.2px;
+  display: flex;
+  text-align: left;
+  padding: 0 5vw 0 3vw;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
+.svg {
+  display: flex;
+  align-items: center;
+  border: none;
+  fill:#ebe7e8f1;
+  width: 3vw;
+  min-width: 25px;
+  box-shadow: none;
+}
+
+.contact {
+  border: none;
+  box-shadow: none;
+  display: flex;
+}
 
 footer {
   display: flex;
@@ -176,7 +228,6 @@ footer div img {
 }
 
 
-
 @media only screen and (min-width: 768px) {
 
   
@@ -200,6 +251,19 @@ footer div img {
     margin-top: 50px;
   }
 
+  section {
+    display: block;
+  }
+
+  section div {
+    width: 55vw;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+
   .ssic {
     margin-top: 72px;
     font-size: 2.8rem;
@@ -218,10 +282,23 @@ footer div img {
 
 @media only screen and (min-width: 240px) and (max-width: 480px) {
   .promo {
-    font-size:1.5rem;
+    font-size: 1.5rem;
     margin-top: 50px;
   }
 
+  section {
+    display:block;
+    
+  }
+
+  section div {
+    width: 55vw;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
   li {
     font-size: 12px;
   }
@@ -233,6 +310,10 @@ footer div img {
   
   header img {
     width: 20%;
+  }
+
+  .svg {
+    align-items: center;
   }
 
   .promo-img img {
