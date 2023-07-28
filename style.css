@@ -39,7 +39,7 @@ header {
 
 header img {
   width: 45%;
-  min-width: 400px;
+  min-width: 300px;
   text-align: center;
 }
 
@@ -212,5 +212,31 @@ footer div img {
   .promo-img img {
     width: 55vw;
     max-width: 300px;
+  }
+}
+
+
+@media only screen and (min-width: 240px) and (max-width: 480px) {
+  .promo {
+    font-size:1.5rem;
+    margin-top: 50px;
+  }
+
+  li {
+    font-size: 12px;
+  }
+
+  .ssic {
+    margin-top: 48px;
+    font-size: 1.5rem;
+  }
+  
+  header img {
+    width: 20%;
+  }
+
+  .promo-img img {
+    width: 55vw;
+    max-width: 200px;
   }
 }
